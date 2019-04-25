@@ -1,0 +1,5 @@
+<h1 class="display-2 text-center"><%= @game.name %></h1>
+
+<p>Price: <%= @game.price %></p>
+
+<%= render 'shared/stripe_form', game: @game %>

@@ -1,0 +1,13 @@
+<h1 class="display-1 text-center">Games</h1>
+
+<div class="game-container">
+  <% @games.each do |game| %>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><%= game.name %></h3>
+        <p class="card-subtitle text-success"><%= game.price %></p>
+        <%= link_to "View", game_path(game), class: 'btn btn-primary' %>
+      </div>
+    </div>
+  <% end %>
+</div>
